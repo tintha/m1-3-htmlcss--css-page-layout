@@ -27,7 +27,6 @@ body {
   background-color: white;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -36,7 +35,7 @@ body {
   justify-content: center;
 }
 
-.nav {
+.nav, .footer {
   background-color: #3a3633;
   color: white;
   padding: 10px;
@@ -50,17 +49,6 @@ body {
   justify-content: center;
 }
 
-.content {
-
-}
-
 .content-text {
   font-size: 40px;
-}
-
-.footer {
-  background-color: #3a3633;
-  color: white;
-  padding: 10px;
-  height: 2vh;
-}
+} 
