@@ -2,6 +2,54 @@ body {
   margin: 0;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h1 {
+  flex: 1;
+}
 .mobile-nav-button img {
   width: 18px;
 }
+
+.mobile-nav-button {
+  display: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+li {
+  padding: 30px;
+}
+
+li:last-of-type {
+  margin-right: 20px;
+}
+
+/* what to display when screen size is less than 800 px */
+@media only screen and (max-width: 800px) {
+  ul {
+    display: none;
+  }
+
+  .mobile-nav-button {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+
+
+
+/*
+@media
+:last-of-type
+
