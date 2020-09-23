@@ -2,9 +2,17 @@ body {
     margin: 0;
 }
 
-/*
-margin
-width
-display
-flex
-calc() /* for ultra-precision */
+.flex-grid {
+    display: flex;
+    flex-direction: column;
+    flex-flow: nowrap;
+}
+
+.col {
+    flex: 1;
+}
+
+img {
+    width: calc(100% - 2px);
+    height: auto;
+  }
