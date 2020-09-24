@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 .main {
   min-height: 100vh;
   display: flex;
@@ -10,7 +14,88 @@ body {
 }
 
 .fast {
+  animation-name: bounce-opacity-slide;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  position: relative;
+  left: 0px;
+}
+
+@keyframes bounce-opacity-slide {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(14px);
+  }
+  24% {
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(200px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .cool {
+  background-color: #0392ff;
+  padding: 30px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 0.3em 0.3em rgb(211, 210, 210);
+  outline: none;
+  text-transform: uppercase;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(14px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.cool:hover {
+  cursor: pointer;
+  animation-name: expand;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  95% {
+    transform: scale(1.2);
+  }
+  99% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(180deg);
+  }
 }
